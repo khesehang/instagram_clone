@@ -9,6 +9,7 @@ import Home from './components/screens/Home';
 import CreatePost from './components/screens/CreatePost';
 import Profile from './components/screens/Profile';
 import UserProfile from './components/screens/UserProfile';
+import SubscribeUserPosts from './components/screens/SubscribeUserPosts';
 export const UserContext = createContext()
 
 
@@ -34,6 +35,7 @@ const Routing = () => {
       <Route path='/profile' element={<Profile />} />
       <Route path='/create' element={<CreatePost />} />
       <Route path='/profile/:userid' element={<UserProfile />} />
+      <Route path='/myfollowingpost' element={<SubscribeUserPosts />} />
     </Routes>
   )
 }
